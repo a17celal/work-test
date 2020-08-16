@@ -39,7 +39,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 .top-right a {
@@ -90,7 +90,7 @@ body {
     margin-left: 10px;
 }
 
-/* Menu layout for desktop */
+/* Layout for desktop */
 @media screen and (min-width: 601px) {
     .btn {
         margin-top: 14px;
@@ -109,9 +109,22 @@ body {
         margin-top: 20px;
     }
 
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .product-card {
+        width: 40%;
+        height: 870px;
+    }
+
 }
 
-/* Menu layout for mobile */
+/* Layout for mobile */
 @media screen and (max-width: 600px) {
     .menu a.icon {
         float: right;
@@ -166,6 +179,27 @@ body {
 
     }
 
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-line {
+        display: none;
+    }
+
+    .more-products {
+        padding-top: 50px;
+    }
+
 }
 
 .product-card,
@@ -176,7 +210,10 @@ body {
 .new,
 .in-stock {
     display: inline-block;
-    margin-right: 200px;
+}
+
+.top {
+    margin-top: -17px;
 }
 
 .article,
@@ -208,7 +245,8 @@ body {
 }
 
 .article-no {
-    padding-top: 20px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 .product-card {
@@ -224,4 +262,70 @@ body {
 .description3,
 .description4 {
     display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.hackett-logo {
+    margin-top: 20px;
+}
+
+.sizes {
+    margin-top: 35px;
+}
+
+.price,
+.no {
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.more-products {
+    clear: both;
+    text-align: center;
+}
+
+.product,
+.product2,
+.product3,
+.product4 {
+    display: inline-block;
+}
+
+.product,
+.product2,
+.product3 {
+    margin-right: 50px;
+}
+
+.more,
+.all {
+    display: inline-block;
+}
+
+.text-line {
+    clear: both;
+    margin-top: 1000px;
+    margin-bottom: 20px;
+}
+
+.all a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-products {
+    position: relative;
+    left: 70%;
+}
+
+.more {
+    position: relative;
+    left: 8%;
 }
