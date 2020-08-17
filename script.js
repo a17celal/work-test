@@ -42,3 +42,10 @@ function toggle4() {
     x.style.display = "none";
   }
 }
+
+function send() {
+  var textinput = document.querySelector(".mail-field");
+  if (textinput.value.indexOf("@") == -1) {
+    alert("Email måste innehålla @");
+  }
+}

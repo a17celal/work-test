@@ -6,7 +6,8 @@
 .heading,
 .header,
 .menu,
-.btn {
+.btn,
+.latest {
     text-transform: uppercase;
 }
 
@@ -39,7 +40,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: lightgrey;
+    background-color: #ececec ;
 }
 
 .top-right a {
@@ -242,6 +243,8 @@ body {
     color: white;
     background-color: black;
     padding: 10px 30px;
+    outline:none;
+    border: none;
 }
 
 .article-no {
@@ -301,7 +304,20 @@ hr {
 .product,
 .product2,
 .product3 {
-    margin-right: 50px;
+    margin-right: 30px;
+}
+
+.price-tag-line,
+.sale-tag {
+    display: inline-block;
+}
+
+.sale-tag {
+    color: red;
+}
+
+.price-tag-line {
+    text-decoration: line-through;
 }
 
 .more,
@@ -328,4 +344,83 @@ hr {
 .more {
     position: relative;
     left: 8%;
+}
+
+.newsletter {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.latest {
+    position: absolute;
+    top: 70px;
+    right: 300px;
+    width: 100%;
+}
+
+.mail-list {
+    position: absolute;
+    bottom: 120px;
+    right: 300px;
+    width: 100%;
+}
+
+.mail {
+    position: absolute;
+    bottom: 150px;
+    left: 250px;
+    width: 100%;
+
+}
+
+.mail-field {
+    padding: 10px 20px;
+}
+
+.mail-btn {
+    background-color:#000033;
+    color: white;
+    border: none;
+    outline:none;
+    padding: 12px 25px;
+}
+
+.social-media {
+    text-align: center;
+    background-color: #d8d8d8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.facebook, .instagram, .news {
+    padding: 10px 100px;
+    background-color: #d8d8d8;
+    outline:none;
+    border: 2px solid black;
+}
+
+.facebook, .instagram {
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+td, th {
+    padding-bottom: 20px;
+}
+
+td {
+    padding-left: 20px;
 }
