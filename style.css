@@ -40,7 +40,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ececec ;
+    background-color: #ececec;
 }
 
 .top-right a {
@@ -123,6 +123,36 @@ body {
         height: 870px;
     }
 
+    .newsletter {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .latest {
+        position: absolute;
+        top: 70px;
+        right: 300px;
+        width: 100%;
+    }
+
+    .mail-list {
+        position: absolute;
+        bottom: 120px;
+        right: 300px;
+        width: 100%;
+    }
+
+    .mail {
+        position: absolute;
+        bottom: 150px;
+        left: 250px;
+        width: 100%;
+    }
+
 }
 
 /* Layout for mobile */
@@ -182,9 +212,11 @@ body {
 
     .mobile {
         display: block;
+        width: 100%;
     }
 
-    .desktop {
+    .desktop,
+    .desktop2 {
         display: none;
     }
 
@@ -199,6 +231,43 @@ body {
 
     .more-products {
         padding-top: 50px;
+    }
+
+    .facebook,
+    .instagram {
+        margin-bottom: 20px;
+    }
+
+    .product,
+    .product2,
+    .product3,
+    .product4 {
+        width: 100%;
+    }
+
+    .latest {
+        display: none;
+    }
+
+    .newsletter {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .mail-list {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+    }
+
+    .mail {
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
     }
 
 }
@@ -243,7 +312,7 @@ body {
     color: white;
     background-color: black;
     padding: 10px 30px;
-    outline:none;
+    outline: none;
     border: none;
 }
 
@@ -346,46 +415,17 @@ hr {
     left: 8%;
 }
 
-.newsletter {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    color: white;
-    margin-top: 100px;
-    margin-bottom: 30px;
-}
 
-.latest {
-    position: absolute;
-    top: 70px;
-    right: 300px;
-    width: 100%;
-}
-
-.mail-list {
-    position: absolute;
-    bottom: 120px;
-    right: 300px;
-    width: 100%;
-}
-
-.mail {
-    position: absolute;
-    bottom: 150px;
-    left: 250px;
-    width: 100%;
-
-}
 
 .mail-field {
     padding: 10px 20px;
 }
 
 .mail-btn {
-    background-color:#000033;
+    background-color: #000033;
     color: white;
     border: none;
-    outline:none;
+    outline: none;
     padding: 12px 25px;
 }
 
@@ -396,15 +436,27 @@ hr {
     padding-bottom: 30px;
 }
 
-.facebook, .instagram, .news {
+.facebook,
+.instagram {
     padding: 10px 100px;
     background-color: #d8d8d8;
-    outline:none;
+    outline: none;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.news {
+    padding: 10px 93px 10px 100px;
+    margin-right: 8px;
+    background-color: #d8d8d8;
+    outline: none;
     border: 2px solid black;
 }
 
-.facebook, .instagram {
-    margin-right: 10px;
+.facebook,
+.instagram,
+.news {
+    cursor: pointer;
 }
 
 .footer {
@@ -417,10 +469,15 @@ hr {
     color: white;
 }
 
-td, th {
+td,
+th {
     padding-bottom: 20px;
 }
 
 td {
     padding-left: 20px;
+}
+
+table {
+    display: inline-block;
 }
