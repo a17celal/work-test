@@ -1,0 +1,265 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logomobile">
+        <a href="#"><img src="https://placehold.it/200x70" alt="Logo" /></a>
+    </div>
+
+    <div class="header">
+        <div class="top-left">
+            <span class="headertext">Fri frakt & fria returer</span>
+            <span class="headertext">1-3 dagar leverans</span>
+        </div>
+        <div class="top-right">
+            <a class="headerlink" href="#home">Blogg</a>
+            <a class="headerlink" href="#news">Mitt konto</a>
+            <a class="headerlink" href="#home">Kundtjänst</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <span class="menu-left">
+            <a href="#">Herr</a>
+            <a href="#">Dam</a>
+            <a href="#">Märken</a>
+            <a href="#">Rea</a>
+        </span>
+        <span class="logo">
+            <a href="#home"><img src="https://placehold.it/200x70" alt="Logo" /></a>
+        </span>
+        <span class="menu-right">
+            <a href="#">Sök</a>
+            <a href="#">Lista</a>
+            <button class="btn">Kundkorg<i class="fa fa-shopping-cart"></i></button>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </span>
+    </div>
+
+    <div class="product-page">
+        <div class="slideshow">
+            <img class="desktop" src="main.jpg" alt="Product pic" />
+            <img class="mobile" src="main-mobile.jpg" alt="Product pic" />
+        </div>
+
+        <div class="product-card">
+            <div class="top">
+                <span class="new">Nyhet</span>
+                <span class="stock">
+                    <i class="fa fa-check"></i>
+                    <span class="in-stock">Finns i lager</span>
+                </span>
+            </div>
+            <div class="center">
+                <img class="hackett-logo" src="Hackett.png" alt="Hackett logo" />
+                <h4 class="hackett">
+                    Hackett Gement Dyed Oxford Slim<br>
+                    Fit Shirt White
+                </h4>
+                <p class="price">999 kr</p>
+                <p class="sizes">Välj storlek</p>
+                <div class="size-btns">
+                    <button class="size">S</button>
+                    <button class="size">M</button>
+                    <button class="size">L</button>
+                </div>
+                <button class="cart">Lägg i varukorg</button>
+                <div class="article-no">
+                    <span class="article">Artikelnummer:</span>
+                    <span class="no">HM3049975AL</span>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-description">
+                    <hr>
+                    <span class="heading">Produktbeskrivning</span>
+                    <i onclick="toggle()" class="fa fa-chevron-down"></i>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac justo ac leo tincidunt<br>
+                        cursus. Aliquam cursus congue tortor vel consectetur. Cras massa lorem, sodales ac imperdiet<br>
+                        quis, egestas in felis. Quisque dapibus id metus in laoreet. Nullam volutpat condimentum leo<br>
+                        quis fermentum.
+                    </p>
+                </div>
+                <div class="product-description">
+                    <hr>
+                    <span class="heading">Storlek & passform</span>
+                    <i onclick="toggle2()" class="fa fa-chevron-down"></i>
+                    <p class="description2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac justo ac leo tincidunt<br>
+                        cursus. Aliquam cursus congue tortor vel consectetur. Cras massa lorem, sodales ac imperdiet<br>
+                        quis, egestas in felis. Quisque dapibus id metus in laoreet. Nullam volutpat condimentum leo<br>
+                        quis fermentum.
+                    </p>
+                </div>
+                <div class="product-description">
+                    <hr>
+                    <span class="heading">Tvätt & skötselråd</span>
+                    <i onclick="toggle3()" class="fa fa-chevron-down"></i>
+                    <p class="description3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac justo ac leo tincidunt<br>
+                        cursus. Aliquam cursus congue tortor vel consectetur. Cras massa lorem, sodales ac imperdiet<br>
+                        quis, egestas in felis. Quisque dapibus id metus in laoreet. Nullam volutpat condimentum leo<br>
+                        quis fermentum.
+                    </p>
+                </div>
+                <div class="product-description">
+                    <hr>
+                    <span class="heading">Leverans & retur</span>
+                    <i onclick="toggle4()" class="fa fa-chevron-down"></i>
+                    <p class="description4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac justo ac leo tincidunt<br>
+                        cursus. Aliquam cursus congue tortor vel consectetur. Cras massa lorem, sodales ac imperdiet<br>
+                        quis, egestas in felis. Quisque dapibus id metus in laoreet. Nullam volutpat condimentum leo<br>
+                        quis fermentum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-line">
+        <h4 class="more">Mer från Hackett London</h4>
+        <span class="all-products">
+            <h4 class="all"><a href="#">Se alla Hackett Produkter</a></h4>
+            <i class="fa fa-chevron-right"></i>
+        </span>
+    </div>
+
+    <div class="more-products">
+        <div class="product">
+            <a href="https://www.example.com">
+                <div class="container">
+                    <img class="thumb" src="thumb.jpg" alt="Product pic">
+                    <span class="new-product">Nyhet</span>
+                </div>
+            </a>
+            <h4 class="brand">Hackett London</h4>
+            <p class="hackett-product">
+                Hackett Gement Dyed Oxford<br>
+                Slim Fit Shirt White</p>
+            <p class="price-tag">999 kr</p>
+        </div>
+
+        <div class="product2">
+            <a href="https://www.example.com">
+                <div class="container">
+                    <img class="thumb" src="thumb2.jpg" alt="Product pic">
+                    <span class="campaign">Kampanj</span>
+                </div>
+            </a>
+            <h4 class="brand">Hackett London</h4>
+            <p class="hackett-product">
+                Hackett Gement Dyed Oxford<br>
+                Slim Fit Shirt White</p>
+            <span class="price-tag-line">999 kr</span>
+            <span class="sale-tag">799 kr</span>
+        </div>
+
+        <div class="product3">
+            <a href="https://www.example.com">
+                <img class="thumb" src="thumb3.jpg" alt="Product pic">
+            </a>
+            <h4 class="brand">Hackett London</h4>
+            <p class="hackett-product">
+                Hackett Gement Dyed Oxford<br>
+                Slim Fit Shirt White</p>
+            <p class="price-tag">999 kr</p>
+        </div>
+
+        <div class="product4">
+            <a href="https://www.example.com">
+                <img class="thumb" src="thumb4.jpg" alt="Product pic">
+            </a>
+            <h4 class="brand">Hackett London</h4>
+            <p class="hackett-product">
+                Hackett Gement Dyed Oxford<br>
+                Slim Fit Shirt White</p>
+            <p class="price-tag">999 kr</p>
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <img class="desktop2" src="newsletter.jpg" alt="newsletter-pic">
+        <img class="mobile" src="newsletter-mobile.jpg" alt="newsletter-pic">
+        <h1 class="latest">Få det senaste</h1>
+        <p class="mail-list">Join our mailing list to stay up to date on new arrivals,
+            promotions and all things
+        </p>
+
+        <div class="mail">
+            <input class="mail-field" type="text" value="E-POSTADRESS" />
+            <button class="mail-btn" onclick="send()">Skicka</button>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <button onclick="location.href='https://www.example.com'" class="facebook">Facebook</button>
+        <button onclick="location.href='https://www.example.com'" class="instagram">Instagram</button>
+        <button onclick="location.href='https://www.example.com'" class="news">Nyhetsbrev</button>
+    </div>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h4>Shop</h4>
+                <ul>
+                    <li>Herr</li>
+                    <li>Dam</li>
+                    <li>Märken</li>
+                    <li>Rea</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Kundservice</h4>
+                <ul>
+                    <li>Order</li>
+                    <li>Betalning</li>
+                    <li>Frakt & leverans</li>
+                    <li>Returer</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Kontaktuppgifter</li>
+                    <li>Tel: 0700 00 00 00</li>
+                    <li>E-POST: info@foretaget.se</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Viström Webb AB</h4>
+                <ul>
+                    <li class="address">Kungsgatan 9</li>
+                    <li>541 31 Skövde</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-line-top">
+        <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper ex eget nunc
+            luctus vulputate.
+            Phasellus posuere massa id urna tempor convallis. Praesent vitae dignissim enim. Praesent ac augue quam.
+            Nulla facilisi. Curabitur ac gravida nisl, et tincidunt enim. Quisque tortor nibh, iaculis sit amet
+            condimentum ac, rhoncus eget neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Ut tortor elit, consectetur a venenatis id, pellentesque id nunc.</p>
+        <hr class="footer-line-bottom">
+        <div class="copyright">
+            <small> Viström Webb AB &copy; 2017. Alla rättigheter reserverade</small>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

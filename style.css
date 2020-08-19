@@ -1,0 +1,606 @@
+/* Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ececec;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.top-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+
+.top-left {
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.top-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerlink {
+    padding-left: 15px;
+}
+
+.headertext {
+    padding-right: 15px;
+}
+
+/* Menu */
+.menu {
+    margin-top: 38px;
+    background-color: white;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-left a,
+.menu-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+.menu .icon {
+    display: none;
+}
+
+.fa-shopping-cart {
+    margin-left: 10px;
+}
+
+/* Logo */
+.logomobile {
+    display: none;
+}
+
+/* Current product page */
+.product-card,
+.slideshow {
+    float: left;
+}
+
+.product-card {
+    position: relative;
+    
+}
+
+.new,
+.in-stock {
+    display: inline-block;
+}
+
+.article,
+.no {
+    display: inline-block;
+}
+
+.new {
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    z-index: -1;
+}
+
+.stock {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    z-index: -1;
+}
+
+.fa-check {
+    color: green;
+}
+
+.size {
+    color: black;
+    background-color: white;
+    border: solid black;
+    margin-bottom: 20px;
+}
+
+.cart {
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+}
+
+.article-no {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.fa-chevron-down {
+    float: right;
+}
+
+.description,
+.description2,
+.description3,
+.description4 {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.hackett-logo {
+    margin-top: 20px;
+}
+
+.sizes {
+    margin-top: 35px;
+}
+
+.price,
+.no,
+.price-tag,
+.sale-tag {
+    font-weight: bold;
+}
+
+hr {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+/* Header - More products */
+.text-line {
+    clear: both;
+    margin-top: 1000px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.all a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-products {
+    position: absolute;
+    right: 226px;
+}
+
+.more {
+    position: relative;
+    left: 11%;
+}
+
+.more,
+.all {
+    display: inline-block;
+}
+
+/* More products - Hackett London */
+.more-products {
+    clear: both;
+    text-align: center;
+}
+
+.product,
+.product2,
+.product3,
+.product4 {
+    display: inline-block;
+}
+
+.product,
+.product2,
+.product3 {
+    margin-right: 30px;
+}
+
+.container {
+    position: relative;
+    z-index: -1;
+}
+
+.new-product,
+.campaign {
+    color: white;
+    background-color: black;
+    padding: 5px 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sale-tag {
+    color: red;
+}
+
+.price-tag-line {
+    text-decoration: line-through;
+}
+
+/* Newsletter */
+.mail-field {
+    padding: 10px 20px;
+}
+
+.mail-btn {
+    background-color: #000033;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+}
+
+/* Social media buttons */
+.social-media {
+    text-align: center;
+    background-color: #d8d8d8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.facebook,
+.instagram {
+    padding: 10px 100px;
+    background-color: #d8d8d8;
+    outline: none;
+    border: 2px solid black;
+    margin-right: 10px;
+}
+
+.news {
+    padding: 10px 93px 10px 100px;
+    margin-right: 8px;
+    background-color: #d8d8d8;
+    outline: none;
+    border: 2px solid black;
+}
+
+.facebook,
+.instagram,
+.news {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+/* Footer */
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .col {
+    width: 300px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+.footer .col h4 {
+    padding: 40px 0px 2px 0px;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    font-size: 14px;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.footer .col ul li:hover {
+    color: #d8d8d8;
+}
+
+.footer-line-top {
+    margin-top: 60px;
+}
+
+.footer-line-top,
+.footer-line-bottom {
+    border: none;
+    height: 1px;
+    background-color: white;
+    width: 85%;
+}
+
+.footer-text,
+.copyright {
+    text-align: center;
+}
+
+.footer-text {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    padding-bottom: 20px;
+}
+
+/* Make uppercase letters */
+.new,
+.in-stock,
+.sizes,
+.cart,
+.article,
+.heading,
+.header,
+.menu,
+.btn,
+.latest,
+h4,
+.address,
+.new-product,
+.campaign,
+.mail-btn,
+.facebook,
+.instagram,
+.news {
+    text-transform: uppercase;
+}
+
+/* Layout for desktop */
+@media screen and (min-width: 601px) {
+    .btn {
+        margin-top: 14px;
+    }
+
+    .menu {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    .menu-left,
+    .menu-right {
+        margin-top: 20px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .product-card {
+        width: 40%;
+        margin-left: 100px;
+    }
+
+    .newsletter {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .desktop2 {
+        max-width: 100%;
+    }
+
+    .latest {
+        position: absolute;
+        top: 70px;
+        right: 300px;
+        width: 100%;
+    }
+
+    .mail-list {
+        position: absolute;
+        bottom: 120px;
+        right: 300px;
+        width: 100%;
+    }
+
+    .mail {
+        position: absolute;
+        bottom: 150px;
+        left: 250px;
+        width: 100%;
+    }
+}
+
+/* Layout for mobile */
+@media only screen and (max-width: 600px) {
+    .menu a.icon {
+        float: right;
+        display: block;
+    }
+
+    .menu.responsive {
+        position: relative;
+    }
+
+    .menu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .menu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+
+    .menu.responsive .btn {
+        display: block;
+    }
+
+    .menu a,
+    .btn {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .btn {
+        margin-left: 10px;
+        margin-top: 14px;
+        padding-bottom: 15px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .logomobile {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop,
+    .desktop2 {
+        display: none;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .top {
+        display: none;
+    }
+
+    .more-products {
+        padding-top: 50px;
+    }
+
+    .facebook,
+    .instagram {
+        margin-bottom: 20px;
+    }
+
+    .product,
+    .product2,
+    .product3,
+    .product4 {
+        width: 100%;
+    }
+
+    .new-product,
+    .campaign {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+    }
+
+    .text-line {
+        display: none;
+    }
+
+    .latest {
+        display: none;
+    }
+
+    .newsletter {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .mail-list {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+    }
+
+    .mail {
+        position: absolute;
+        bottom: 35px;
+        width: 100%;
+    }
+}
+
+/* Responsive footer */
+@media only screen and (min-width: 1280px) {
+    .contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer .col {
+        width: 33%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+}
