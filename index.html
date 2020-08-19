@@ -6,15 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Test</title>
-
+    <title>Shop</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
     <div class="logomobile">
         <a href="#"><img src="https://placehold.it/200x70" alt="Logo" /></a>
     </div>
@@ -45,7 +41,7 @@
             <a href="#">Sök</a>
             <a href="#">Lista</a>
             <button class="btn">Kundkorg<i class="fa fa-shopping-cart"></i></button>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
                 <i class="fa fa-bars"></i>
             </a>
         </span>
@@ -59,9 +55,11 @@
 
         <div class="product-card">
             <div class="top">
-                <p class="new">Nyhet</p>
-                <i class="fa fa-check"></i>
-                <p class="in-stock">Finns i lager</p>
+                <span class="new">Nyhet</span>
+                <span class="stock">
+                    <i class="fa fa-check"></i>
+                    <span class="in-stock">Finns i lager</span>
+                </span>
             </div>
             <div class="center">
                 <img class="hackett-logo" src="Hackett.png" alt="Hackett logo" />
@@ -142,8 +140,13 @@
 
     <div class="more-products">
         <div class="product">
-            <img class="thumb" src="thumb.jpg" alt="Product pic">
-            <h5 class="brand">Hackett London</h5>
+            <a href="https://www.example.com">
+                <div class="container">
+                    <img class="thumb" src="thumb.jpg" alt="Product pic">
+                    <span class="new-product">Nyhet</span>
+                </div>
+            </a>
+            <h4 class="brand">Hackett London</h4>
             <p class="hackett-product">
                 Hackett Gement Dyed Oxford<br>
                 Slim Fit Shirt White</p>
@@ -151,8 +154,13 @@
         </div>
 
         <div class="product2">
-            <img class="thumb" src="thumb2.jpg" alt="Product pic">
-            <h5 class="brand">Hackett London</h5>
+            <a href="https://www.example.com">
+                <div class="container">
+                    <img class="thumb" src="thumb2.jpg" alt="Product pic">
+                    <span class="campaign">Kampanj</span>
+                </div>
+            </a>
+            <h4 class="brand">Hackett London</h4>
             <p class="hackett-product">
                 Hackett Gement Dyed Oxford<br>
                 Slim Fit Shirt White</p>
@@ -161,8 +169,10 @@
         </div>
 
         <div class="product3">
-            <img class="thumb" src="thumb3.jpg" alt="Product pic">
-            <h5 class="brand">Hackett London</h5>
+            <a href="https://www.example.com">
+                <img class="thumb" src="thumb3.jpg" alt="Product pic">
+            </a>
+            <h4 class="brand">Hackett London</h4>
             <p class="hackett-product">
                 Hackett Gement Dyed Oxford<br>
                 Slim Fit Shirt White</p>
@@ -170,8 +180,10 @@
         </div>
 
         <div class="product4">
-            <img class="thumb" src="thumb4.jpg" alt="Product pic">
-            <h5 class="brand">Hackett London</h5>
+            <a href="https://www.example.com">
+                <img class="thumb" src="thumb4.jpg" alt="Product pic">
+            </a>
+            <h4 class="brand">Hackett London</h4>
             <p class="hackett-product">
                 Hackett Gement Dyed Oxford<br>
                 Slim Fit Shirt White</p>
@@ -194,99 +206,60 @@
     </div>
 
     <div class="social-media">
-        <button onclick="location.href='http://www.example.com'" class="facebook">Facebook</button>
-        <button onclick="location.href='http://www.example.com'" class="instagram">Instagram</button>
-        <button onclick="location.href='http://www.example.com'" class="news">Nyhetsbrev</button>
+        <button onclick="location.href='https://www.example.com'" class="facebook">Facebook</button>
+        <button onclick="location.href='https://www.example.com'" class="instagram">Instagram</button>
+        <button onclick="location.href='https://www.example.com'" class="news">Nyhetsbrev</button>
     </div>
 
     <div class="footer">
-        <table>
-            <thead>
-                <tr>
-                    <th>Shop</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#">Herr</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Dam</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Märken</a></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td><a href="#">Rea</a></td>
-                </tr>
-            </tfoot>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th>Kundservice</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="#">Order</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Betalning</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Frakt & leverans</a></td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td><a href="#">Returer</a></td>
-                </tr>
-            </tfoot>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th>Kontakt</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Kontaktuppgifter</td>
-                </tr>
-                <tr>
-                    <td>Tel: 0700 00 00 00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>E-POST: info@foretaget.se</td>
-                </tr>
-            </tfoot>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th>Viström Webb AB</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Kungsgatan 9</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>541 3 Skövde</td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="contain">
+            <div class="col">
+                <h4>Shop</h4>
+                <ul>
+                    <li>Herr</li>
+                    <li>Dam</li>
+                    <li>Märken</li>
+                    <li>Rea</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Kundservice</h4>
+                <ul>
+                    <li>Order</li>
+                    <li>Betalning</li>
+                    <li>Frakt & leverans</li>
+                    <li>Returer</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Kontaktuppgifter</li>
+                    <li>Tel: 0700 00 00 00</li>
+                    <li>E-POST: info@foretaget.se</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Viström Webb AB</h4>
+                <ul>
+                    <li class="address">Kungsgatan 9</li>
+                    <li>541 31 Skövde</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="footer-line-top">
+        <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper ex eget nunc
+            luctus vulputate.
+            Phasellus posuere massa id urna tempor convallis. Praesent vitae dignissim enim. Praesent ac augue quam.
+            Nulla facilisi. Curabitur ac gravida nisl, et tincidunt enim. Quisque tortor nibh, iaculis sit amet
+            condimentum ac, rhoncus eget neque. Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Ut tortor elit, consectetur a venenatis id, pellentesque id nunc.</p>
+        <hr class="footer-line-bottom">
+        <div class="copyright">
+            <small> Viström Webb AB &copy; 2017. Alla rättigheter reserverade</small>
+        </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
-
 </html>

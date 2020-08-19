@@ -1,4 +1,4 @@
-function myFunction() {
+function menu() {
   var x = document.querySelector(".menu");
   if (x.className === "menu") {
     x.className += " responsive";
