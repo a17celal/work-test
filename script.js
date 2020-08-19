@@ -1,3 +1,4 @@
+//Hamburger menu
 function menu() {
   var x = document.querySelector(".menu");
   if (x.className === "menu") {
@@ -7,6 +8,11 @@ function menu() {
   }
 }
 
+/*
+The functions below will show 
+or hide product information 
+after click on arrow down
+*/
 function toggle() {
   var x = document.querySelector('.description');
   if (x.style.display === "none") {
@@ -43,6 +49,7 @@ function toggle4() {
   }
 }
 
+// Validation for e-mail
 function send() {
   var textinput = document.querySelector(".mail-field");
   if (textinput.value.indexOf("@") == -1) {
